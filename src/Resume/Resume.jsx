@@ -1,9 +1,9 @@
 import './Resume.css';
 import React from "react";
 import Pdf from '../Pdf.jsx';
-import resume from '../assets/Resume.pdf';
 
 function Resume() {
+  const resume = '/Resume.pdf';
     return (
       <div className="Resume">
         <div className='header'>
