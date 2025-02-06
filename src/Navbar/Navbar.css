@@ -1,0 +1,32 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #000;
+}
+.name-title {
+    white-space: nowrap;
+}
+.nav-list ul{
+    display: flex;
+    gap: 30px; 
+    padding: 0;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.nav-list a {
+    cursor: pointer;
+    color: #000;
+    font-size: 0.9em;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.nav-list a:hover{
+    color: gray;
+}
+
+

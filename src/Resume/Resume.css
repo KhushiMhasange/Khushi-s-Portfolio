@@ -1,0 +1,39 @@
+.Resume{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    margin-left: -0.5em;
+    flex-wrap: wrap;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.header h2{
+    font-weight: 500;
+}
+
+.header button{
+    background-color: rgb(49, 49, 49);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.header button:hover{
+    background-color: rgb(73, 73, 73);
+}
+
+@media (max-width: 768px),(max-width: 1264px){
+    .Resume{
+        max-width: 100%; 
+    }   
+}

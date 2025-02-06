@@ -1,0 +1,44 @@
+.about{
+    justify-content: center;
+    max-width: 50%;
+    padding: 20px;
+    margin: auto;    
+}
+.intro{
+    font-weight: 500;
+    padding-bottom: 2em;
+}
+.history{
+    padding-top: 1em;
+    /* border-left: 1px solid #000; */
+}
+.history p{
+    display: flex;
+    flex-direction: column;
+    font-size: large;
+    font-weight: 500;
+    margin: 0 0 0.5em;
+}
+.history .title{
+    font-size: medium;
+    font-weight: 400;
+}
+
+.history a{
+    text-decoration: none;
+    color: black;
+}
+.history a:hover{
+    color: gray;
+}
+.dates {
+    margin: 0 0 2em;
+    font-size:medium;
+    color: gray;
+}
+
+@media (max-width: 768px),(max-width: 1264px){
+    .about {
+        max-width: 100%; 
+    }
+}

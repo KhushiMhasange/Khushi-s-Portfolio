@@ -1,0 +1,43 @@
+.contact{
+    justify-content: center;
+    max-width: 80%;
+    padding: 20px;
+    margin: auto;
+}
+.contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    height: 280px;
+}
+
+.intro-con{
+    text-align: center;
+    padding-bottom: 1em;
+    font-weight: 500;
+}
+  
+.contact-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000000; 
+    gap: 1rem; 
+    transition: color 0.3s ease;
+    padding-bottom: 1em;
+}
+
+.contact-link:hover {
+color: gray; 
+}
+
+@media (max-width: 480px),(max-width: 1240px){
+    .contact{
+        max-width: 100%; 
+    }  
+    .contacts{
+        flex-direction: column;
+        align-items: center;
+    }
+}

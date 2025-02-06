@@ -1,0 +1,16 @@
+.App {
+  margin: 0 8em;
+  font-size: calc(6px + 2vmin);
+  font-family: "Figtree", serif;
+}
+
+@media (max-width: 1264px) {
+  .App {
+    margin : 0 4em; 
+  }
+}
+@media (max-width: 768px){
+  .App {
+    margin : 0 2em; 
+  }
+}
