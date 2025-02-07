@@ -1,15 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import {pdfjs, Document, Page} from 'react-pdf'
-import 'react-pdf/dist/Page/AnnotationLayer.css';
-import 'react-pdf/dist/Page/TextLayer.css';
-
+import { Worker, Viewer } from "@react-pdf-viewer/core";
+import "@react-pdf-viewer/core/lib/styles/index.css"
+import resume from '../src/assets/Resume.pdf'
 
 function Pdf(){
-    const resume = '/Resume.pdf';
-    pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-        'pdfjs-dist/build/pdf.worker.min.mjs',
-        import.meta.url,
-      ).toString()
     
     const [width,setWidth] = useState(window.innerWidth);
 
@@ -23,14 +17,13 @@ function Pdf(){
       }
     }, [])
     
-    const maxWidth = 900;
-    const pdfWidth = width > maxWidth ? maxWidth : width * 0.9;
+    const pdfWidth = width > 900 ? 900 : width*0.9;
 
     return(
-        <div style={{ display: 'flex', justifyContent: 'center'}}>
-        <Document file={resume} >
-        <Page pageNumber={1} width={pdfWidth}></Page>
-        </Document>
+        <div style={{width:pdfWidth, margin: "auto", padding: "10px" }}>
+          <Worker workerUrl={"https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js"}>
+            <Viewer fileUrl={resume} style={{width:pdfWidth}}/>
+          </Worker>
         </div>
     )
 }

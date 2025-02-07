@@ -7,6 +7,7 @@ import Contact from './Contact/Contact'
 import Projects from './Projects/Projects'
 import Footer from './Footer/Footer'
 
+
 function App() {
   return (
     <Router>
