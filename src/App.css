@@ -1,7 +1,36 @@
+:root {
+--text-primary-light: #292421;
+--text-primary-dark: #f2e7dd;
+
+--text-secondary-light: #dd9d91;
+--text-secondary-dark: #e6b5ac;
+
+--bg-primary-light: #f2e7dd;
+--bg-primary-dark: #191614;
+
+--bg-secondary-light: #f2d6ce;
+--bg-secondary-dark: #634f42;
+
+}
+
+.light{
+  --text-primary: var(--text-primary-light);
+  --text-secondary: var(--text-secondary-light);
+  --bg-primary: var(--bg-primary-light);
+  --bg-secondary: var(--bg-secondary-light);
+}
+  
+.dark{
+  --text-primary: var(--text-primary-dark);
+  --text-secondary: var(--text-secondary-dark);
+  --bg-primary: var(--bg-primary-dark);
+  --bg-secondary: var(--bg-secondary-dark);
+}
+
 .App {
-  margin: 0 8em;
-  font-size: calc(6px + 2vmin);
-  font-family: "Figtree", serif;
+margin: 0 8em;
+font-size: calc(6px + 2vmin);
+font-family: "Figtree", serif;
 }
 
 @media (max-width: 1264px) {

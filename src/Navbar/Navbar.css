@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--text-primary);
 }
 .name-title {
     white-space: nowrap;
@@ -19,14 +19,72 @@
 
 .nav-list a {
     cursor: pointer;
-    color: #000;
+    color: var(--text-primary);
     font-size: 0.9em;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.nav-list a:hover{
-    color: gray;
+label{
+    display: flex;
+    width: 2.5em;
+    height: 1.5em;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 5px;
+    background: var(--bg-secondary);
+    border-radius: 50px;
+    cursor: pointer;
+    position: relative;
+    font-size: 1.2em;
 }
 
+#sun {
+    color: var(--text-secondary);
+    transition: 0.5s;
+    opacity: 1;
+}
+#moon {
+    color: var(--text-secondary);
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateX(24px);
+}
+label .ball {
+  position: absolute;
+  display: block;
+  width: 1.2em;
+  height: 1.2em;
+  left: 0.3em;
+  background:var(--bg-primary);
+  border-radius: 50%;
+  transition: 0.5s;
+}
+input:checked + label .ball {
+    transform: translateX(21px);
+}
+
+input:checked + label #sun {
+    transform: translateX(-21px);
+    opacity: 0;
+}
+input:checked + label #moon {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+input {
+    display: none;
+}
+
+.nav-list a:hover{
+    color:  var(--text-secondary);
+}
+
+@media (max-width: 500px){
+    .nav-list ul{
+        gap: 0.8em; 
+    }
+
+}
 

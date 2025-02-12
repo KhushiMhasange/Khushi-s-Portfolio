@@ -20,7 +20,7 @@ function Pdf(){
     const pdfWidth = width > 900 ? 900 : width*0.9;
 
     return(
-        <div style={{width:pdfWidth, margin: "auto", padding: "10px" }}>
+        <div style={{width:pdfWidth, margin: "auto", padding: "10px",backgroundColor: "var(--bg-primary)"}}>
           <Worker workerUrl={"https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js"}>
             <Viewer fileUrl={resume} style={{width:pdfWidth}}/>
           </Worker>

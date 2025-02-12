@@ -6,6 +6,8 @@
     padding-top: 20px;
     margin-left: -0.5em;
     flex-wrap: wrap;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
 }
 
 .header{
@@ -18,18 +20,26 @@
 
 .header h2{
     font-weight: 500;
+    color: var(--text-secondary);
 }
 
 .header button{
-    background-color: rgb(49, 49, 49);
-    color: white;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    font-size:0.8em;
+    font-weight: 500;
     padding: 10px;
     border: none;
     border-radius: 5px;
 }
 
 .header button:hover{
-    background-color: rgb(73, 73, 73);
+    background-color:var(--text-secondary);
+    color: var(--bg-secondary);
+}
+
+.rpv-core__inner-page {
+    background-color: var(--bg-primary);
 }
 
 @media (max-width: 768px),(max-width: 1264px){
