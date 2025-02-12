@@ -40,6 +40,7 @@
 
 .rpv-core__inner-page {
     background-color: var(--bg-primary);
+    transition: 0.5s;
 }
 
 @media (max-width: 768px),(max-width: 1264px){
