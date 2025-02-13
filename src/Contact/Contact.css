@@ -15,7 +15,7 @@
 .intro-con{
     text-align: center;
     color: var(--text-secondary); 
-    padding-bottom: 1em;
+    /* padding-bottom: 1em; */
     font-weight: 500;
 }
   

@@ -2,14 +2,26 @@ import Pdf from '../Pdf';
 import './Resume.css';
 import React from "react";
 import resume from '../assets/Resume.pdf'
+import {motion} from "framer-motion";
+
+const hvariant ={
+  hidden:{opacity:0,
+          y:75
+  },
+  visible:{opacity:1,
+      y:0,
+      ease:"easeOut",
+      delay:0.5
+  }
+} 
 
 function Resume() {
     return (
       <div className="Resume">
-        <div className='header'>
+        <motion.div className='header' initial="hidden" animate="visible" variants={hvariant}>
           <h2>My Resume</h2>
           <a href={resume} download><button>Download Resume</button></a>
-        </div>
+        </motion.div>
         <div className='pdf-veiwer'>
           <Pdf/>
         </div>

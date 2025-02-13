@@ -6,7 +6,7 @@
 }
 .intro{
     font-weight: 500;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 .history{
     padding-top: 1em;
@@ -17,8 +17,9 @@
     flex-direction: column;
     font-size: large;
     font-weight: 500;
-    margin: 0 0 0.5em;
+    margin: 0 0 0.5em;  
 }
+
 .history .title{
     font-size: medium;
     font-weight: 400;

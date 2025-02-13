@@ -3,31 +3,64 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import {motion} from "framer-motion";
+
+const secVar = {
+  hidden : {opacity:0},
+  show : {
+      opacity:1,
+      transition :{
+          staggerChildren : 0.5,
+          delay:0.2
+      }
+  },
+}
+
+const h2variant ={
+  hidden:{opacity:0,
+          y:75
+  },
+  visible:{opacity:1,
+      y:0,
+      ease:"easeOut",
+      delay:0.5
+  }
+} 
+const avariant ={
+  hidden:{opacity:0,
+          x:-100
+  },
+  show:{opacity:1,
+      x:0,
+      ease:"easeOut",
+  }
+} 
 
 function Contact() {
     return (
       <div className="contact">
-        <h2 className="intro-con">You can reach out to me here.</h2>
-        <section className="contacts">
-        <a href="khushimhasange1905@gmail.com" className="contact-link">
+        <motion.h2 className="intro-con" initial="hidden" animate="visible" variants={h2variant}>You can reach out to me here.</motion.h2>
+        <motion.section className="contacts" variants={secVar} initial="hidden"
+            animate="show">
+        <motion.a href="khushimhasange1905@gmail.com" className="contact-link" variants={avariant}>
         <FontAwesomeIcon icon={faEnvelope} size="2x" />
         <h3>Email</h3>
-        </a>
-        <a href="https://github.com/KhushiMhasange" target="_blank" rel="noopener noreferrer" className="contact-link">
+        </motion.a>
+        <motion.a href="https://github.com/KhushiMhasange" target="_blank" rel="noopener noreferrer" className="contact-link" variants={avariant}>
           <FontAwesomeIcon icon={faGithub} size="2x" />
           <h3>Github</h3>
-        </a>
+        </motion.a>
         
-        <a href="https://www.linkedin.com/in/khushi-mhasange-207278226/" target="_blank" rel="noopener noreferrer" className="contact-link">
+        <motion.a href="https://www.linkedin.com/in/khushi-mhasange-207278226/" target="_blank" rel="noopener noreferrer" className="contact-link" variants={avariant}>
           <FontAwesomeIcon icon={faLinkedin} size="2x" />
           <h3>LinkedIn</h3>
-        </a>
+        </motion.a>
         
-        <a href="https://x.com/KhushiMhasange" target="_blank" rel="noopener noreferrer" className="contact-link">
+        <motion.a href="https://x.com/KhushiMhasange" target="_blank" rel="noopener noreferrer" className="contact-link" variants={avariant}>
           <FontAwesomeIcon icon={faXTwitter} size="2x" />
           <h3>Twitter (X)</h3>
-        </a>
-        </section>
+        </motion.a>
+        </motion.section>
       </div>
     );
   }
