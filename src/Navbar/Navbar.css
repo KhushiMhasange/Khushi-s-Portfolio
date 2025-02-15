@@ -6,8 +6,15 @@
     flex-wrap: wrap;
     border-bottom: 1px solid var(--text-primary);
 }
-.name-title {
+.name-title a{
+    color: var(--text-primary);
     white-space: nowrap;
+    text-decoration: none;
+}
+
+.name-title a:hover{
+    color: var(--text-secondary);
+    transition: 0.3s;
 }
 .nav-list ul{
     display: flex;
@@ -34,6 +41,8 @@ label{
     padding: 0 5px;
     background: var(--bg-secondary);
     border-radius: 50px;
+    border: 1px solid var(--text-primary);
+    border-width: 1px 2px 2px 1px;
     cursor: pointer;
     position: relative;
     font-size: 1.2em;

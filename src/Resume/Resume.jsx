@@ -2,6 +2,8 @@ import Pdf from '../Pdf';
 import './Resume.css';
 import React from "react";
 import resume from '../assets/Resume.pdf'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload} from '@fortawesome/free-solid-svg-icons';
 import {motion} from "framer-motion";
 
 const hvariant ={
@@ -20,7 +22,7 @@ function Resume() {
       <div className="Resume">
         <motion.div className='header' initial="hidden" animate="visible" variants={hvariant}>
           <h2>My Resume</h2>
-          <a href={resume} download><button>Download Resume</button></a>
+          <a href={resume} download><button>Download<FontAwesomeIcon icon={faDownload} className='icon' /></button></a>
         </motion.div>
         <div className='pdf-veiwer'>
           <Pdf/>

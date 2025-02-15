@@ -16,7 +16,7 @@
     text-align: center;
     color: var(--text-secondary); 
     /* padding-bottom: 1em; */
-    font-weight: 500;
+    font-weight: 600;
 }
   
 .contact-link {
@@ -27,6 +27,27 @@
     gap: 1rem; 
     transition: color 0.3s ease;
     padding-bottom: 1em;
+}
+
+#email-link .tooltip {
+    visibility: hidden;
+    background-color: rgba(40, 39, 39, 0.8);
+    text-align: center;
+    padding: 6px;
+    border-radius: 5px;
+    font-size: 12px;
+    position: absolute;
+    margin-top: 5em;
+    margin-left:5em;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    white-space: nowrap; 
+}
+  
+#email-link:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
 }
 
 .contact-link:hover {

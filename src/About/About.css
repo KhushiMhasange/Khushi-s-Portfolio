@@ -1,0 +1,60 @@
+
+.About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+  
+.About h2 {
+    font-size: 2rem;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+  
+.intro-para {
+    font-size: 1.1em;
+    text-align: justify;
+    line-height: 1.6;
+}
+  
+.About img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.skills-marquee {
+    display: flex;
+    gap: 2rem;
+    white-space: nowrap;
+    width: 100%;
+    margin-bottom: -1em;
+}
+  
+.skill-item {
+    padding: 10px 20px;
+    margin: 2.2em 0;
+    background-color: var(--bg-secondary);
+    color: var(--hover-primary);
+    border: 1px solid var(--text-primary);
+    border-width: 1px 4px 3px 1px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    display: inline-block;
+}
+ 
+  /* Responsive Design */
+  @media (min-width: 768px) {
+    .About {
+      flex-direction: row;
+      text-align: left;
+    }
+  
+    .intro-para {
+      text-align: left;
+    }
+  }
+  

@@ -10,10 +10,10 @@ function Navbar() {
   const { toggleTheme } = useContext(ThemeContext);
   return (
     <div className="navbar">
-       <header className='name-title'><h1>Khushi Mhasange</h1></header>
+       <header className='name-title'><Link to="/"><h1>Khushi Mhasange</h1></Link></header>
        <nav className="nav-list">
           <ul>
-            <li><Link to="/">History</Link></li>
+            <li><Link to="/History">History</Link></li>
             <li><Link to="/Projects">Projects</Link></li>
             <li><Link to="/Resume">Resume</Link></li>
             <li><Link to="/Contact">Contact</Link></li> 

@@ -39,12 +39,13 @@ const avariant ={
 function Contact() {
     return (
       <div className="contact">
-        <motion.h2 className="intro-con" initial="hidden" animate="visible" variants={h2variant}>You can reach out to me here.</motion.h2>
+        <motion.h2 className="intro-con" initial="hidden" animate="visible" variants={h2variant}>If you liked my portfolio, Let's Connect 🚀.</motion.h2>
         <motion.section className="contacts" variants={secVar} initial="hidden"
             animate="show">
-        <motion.a href="khushimhasange1905@gmail.com" className="contact-link" variants={avariant}>
+        <motion.a href="mailto:khushimhasange1905@gmail.com" id='email-link' className="contact-link" variants={avariant}>
         <FontAwesomeIcon icon={faEnvelope} size="2x" />
         <h3>Email</h3>
+        <span className="tooltip">khushimhasange1905@gmail.com</span>
         </motion.a>
         <motion.a href="https://github.com/KhushiMhasange" target="_blank" rel="noopener noreferrer" className="contact-link" variants={avariant}>
           <FontAwesomeIcon icon={faGithub} size="2x" />

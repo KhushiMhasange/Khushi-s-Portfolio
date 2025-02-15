@@ -1,15 +1,22 @@
 :root {
 --text-primary-light: #292421;
 --text-primary-dark: #f2e7dd;
-
---text-secondary-light: #dd9d91;
+/* #dd9d91 */
+--text-secondary-light: #ab6b6b;
 --text-secondary-dark: #e6b5ac;
 
 --bg-primary-light: #f2e7dd;
 --bg-primary-dark: #191614;
 
---bg-secondary-light: #f2d6ce;
+/* #f2d6ce */
+--bg-secondary-light: #facec6;
 --bg-secondary-dark: #634f42;
+
+--hover-primary-light:#ab6b6b;
+--hover-primary-dark:#f0c2ba;
+
+--hover-sec-light:#f2e7dd; 
+--hover-sec-dark: #342727;
 
 }
 
@@ -18,6 +25,8 @@
   --text-secondary: var(--text-secondary-light);
   --bg-primary: var(--bg-primary-light);
   --bg-secondary: var(--bg-secondary-light);
+  --hover-primary:var(--hover-primary-light);
+  --hover-sec:var(--hover-sec-light);
 }
   
 .dark{
@@ -25,6 +34,8 @@
   --text-secondary: var(--text-secondary-dark);
   --bg-primary: var(--bg-primary-dark);
   --bg-secondary: var(--bg-secondary-dark);
+  --hover-primary:var(--hover-primary-dark);
+  --hover-sec:var(--hover-sec-dark);
 }
 
 .App {
