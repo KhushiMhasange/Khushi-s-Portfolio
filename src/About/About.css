@@ -4,11 +4,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 1em;
     gap: 1em;
 }
   
 .About h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--text-secondary);
     font-weight: 600;
 }
@@ -25,14 +26,26 @@
     border-radius: 10px;
 }
 
-.skills-marquee {
-    display: flex;
-    gap: 2rem;
-    white-space: nowrap;
-    width: 100%;
-    margin-bottom: -1em;
+.skills-marquee-container {
+  width: 100vw; 
+  overflow-x: hidden;
+  padding: 10px 0;
+  position: relative;
 }
-  
+
+.skills-marquee {
+  display: flex;
+  white-space: nowrap;
+  margin-bottom: -1em;
+}
+
+.skills-wrapper {
+  display: flex;
+  min-width: 100%;
+  justify-content: space-around;
+  gap: 1.5em;
+}
+
 .skill-item {
     padding: 10px 20px;
     margin: 2.2em 0;
