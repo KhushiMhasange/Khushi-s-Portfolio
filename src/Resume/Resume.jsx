@@ -1,7 +1,7 @@
 import Pdf from '../Pdf';
 import './Resume.css';
 import React from "react";
-import resume from '../assets/Resume(2).pdf'
+import resume from '../assets/Resume (2).pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDownload} from '@fortawesome/free-solid-svg-icons';
 import {motion} from "framer-motion";
