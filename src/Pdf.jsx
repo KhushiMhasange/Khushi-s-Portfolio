@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Worker, Viewer } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css"
-import resume from '../src/assets/Resume.pdf'
+import resume from '../src/assets/Resume(2).pdf'
 
 function Pdf(){
     
