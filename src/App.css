@@ -42,6 +42,7 @@
 margin: 0 8em;
 font-size: calc(6px + 2vmin);
 font-family: "Figtree", serif;
+overflow-x: hidden;
 }
 
 @media (max-width: 1264px) {
