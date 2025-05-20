@@ -61,12 +61,7 @@ function About() {
         <div>
           <motion.h2  initial="hidden" animate="visible" variants={h2variant}>Hey there! 🌸✨</motion.h2>
           <motion.p className="intro-para" variants={pvariant} initial="hidden" animate="show">
-            Welcome to my digital realm, where code meets creativity and
-            debugging feels like a shonen protagonist's training arc. Just like
-            Luffy chasing the One Piece, I’m on a quest to master the
-            ever-evolving world of tech—whether it’s crafting sleek React UIs,
-            optimizing backend logic, or solving DSA challenges like a strategic
-            game of shogi. If you love tech , you're in the right place!
+            I'm an aspiring developer who enjoys building web apps as a way to learn and grow. Most of what I know comes from trying things out on my own — setting up projects, solving problems, and figuring things out as I go. Alongside this, I’ve been practicing data structures and algorithms to improve my problem-solving skills. I’m still exploring different technologies and finding what clicks with me, one project at a time. I 
             🎮💻🚀🔥
           </motion.p>
         </div>

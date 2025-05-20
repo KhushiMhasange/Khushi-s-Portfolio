@@ -32,9 +32,9 @@ function Projects() {
       <motion.h2 className='intro' initial="hidden" animate="visible" variants={h2variant}>Projects I have worked on.</motion.h2>
       <motion.section initial="hidden" animate="visible" variants={projectSecVar}>
         <motion.div className="project" variants={h2variant}>
-          <a href="/" target="_blank"><h2>CloakTalk</h2></a>
+          <a href="https://cloak-talk.vercel.app/" target="_blank" rel="noopener noreferrer"><h2>CloakTalk</h2></a>
           <p><FontAwesomeIcon icon={faCircleInfo} className="icon"/>
-          Anonymous Social meadia website for college students.
+          Anonymous Social media website for college students.
           </p>
           <p><FontAwesomeIcon icon={faCode} className="icon" />
             MERN stack
@@ -44,11 +44,11 @@ function Projects() {
           </p>
           <p>
           <FontAwesomeIcon icon={faGithub} className="icon" />
-            <a href="/goto/mixmaster" target="_blank"> Git Repository</a>
+            <a href="https://github.com/KhushiMhasange/CloakTalk"target="_blank" rel="noopener noreferrer"> Git Repository</a>
           </p>
         </motion.div>
         <motion.div className="project" variants={h2variant}>
-          <a href="/" target="_blank"><h2>Multiplayer Tic-Tac-Toe</h2></a>
+          <a href="https://tic-tac-toe-frontend-wcx2.onrender.com/" target="_blank" rel="noopener noreferrer"><h2>Multiplayer Tic-Tac-Toe</h2></a>
           <p><FontAwesomeIcon icon={faCircleInfo} className="icon" />
             Tic-Tac-Toe with real time updates using websockets.
           </p>
@@ -60,7 +60,7 @@ function Projects() {
           </p>
           <p>
           <FontAwesomeIcon icon={faGithub} className="icon" />
-            <a href="/goto/mixmaster" target="_blank"> Git Repository</a>
+            <a href="https://github.com/KhushiMhasange/Tic-Tac-Toe" target="_blank" rel="noopener noreferrer"> Git Repository</a>
           </p>
         </motion.div>
         <motion.div className="project" variants={h2variant}>
@@ -76,7 +76,7 @@ function Projects() {
           </p>
           <p>
           <FontAwesomeIcon icon={faGithub} className="icon" />
-            <a href="/" target="_blank"> Git Repository</a>
+            <a href="https://github.com/KhushiMhasange/MentalHealthCompass" target="_blank" rel="noopener noreferrer"> Git Repository</a>
           </p>
         </motion.div>
       </motion.section>
